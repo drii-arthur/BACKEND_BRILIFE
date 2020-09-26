@@ -1,0 +1,43 @@
+### get all agen_level
+GET http://localhost:5000/agen_level
+
+### get agen_level by id
+GET http://localhost:5000/agen_level/1
+
+### get all agen
+GET http://localhost:5000/agen
+
+### get agen by id
+GET http://localhost:5000/agen/1
+
+### add an agen
+POST http://localhost:5000/agen
+Content-Type: application/json
+
+{
+    "no_lisensi": 1004,
+    "nama_agen": "TIKNO",
+    "id_agen_level": 4,
+    "status": 1,
+    "status_tgl": "2020-01-04",
+    "wilayah_kerja": "JAKARTA"
+}
+
+### get all agen_struktur
+GET http://localhost:5000/agen_struktur
+
+### get agen_struktur by id
+GET http://localhost:5000/agen_struktur/1
+
+### add an agen_struktur
+POST http://localhost:5000/agen_struktur
+Content-Type: application/json
+
+{
+    "parent_id": null,
+    "id_agen": 1,
+    "berlaku_mulai": "2020-08-01",
+    "berlaku_akhir": "2020-08-01",
+    "status": "A",
+    "keterangan": null
+}

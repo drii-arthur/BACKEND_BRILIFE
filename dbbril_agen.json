@@ -1,0 +1,84 @@
+[
+  {
+    "type": "header",
+    "version": "4.9.2",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  { "type": "database", "name": "dbbril_agen" },
+  {
+    "type": "table",
+    "name": "dbo.agen",
+    "database": "dbbril_agen",
+    "data": [
+      {
+        "id": "1",
+        "no_lisensi": "1001",
+        "nama_agen": "SITI",
+        "id_agen_level": "1",
+        "status": "1",
+        "status_tgl": "2020-01-01",
+        "wilayah_kerja": "JAKARTA"
+      },
+      {
+        "id": "2",
+        "no_lisensi": "1003",
+        "nama_agen": "SARIOH",
+        "id_agen_level": "3",
+        "status": "1",
+        "status_tgl": "2020-01-03",
+        "wilayah_kerja": "JAKARTA"
+      },
+      {
+        "id": "3",
+        "no_lisensi": "1004",
+        "nama_agen": "TIKNO",
+        "id_agen_level": "4",
+        "status": "1",
+        "status_tgl": "2020-01-04",
+        "wilayah_kerja": "JAKARTA"
+      }
+    ]
+  },
+  {
+    "type": "table",
+    "name": "dbo.agen_level",
+    "database": "dbbril_agen",
+    "data": [
+      {
+        "id": "1",
+        "level": "FU",
+        "keterangan": "Field Underwriter",
+        "urutan": "4"
+      },
+      { "id": "2", "level": "UM", "keterangan": "Unit Manajer", "urutan": "3" },
+      {
+        "id": "3",
+        "level": "SM",
+        "keterangan": "Sales Manajer",
+        "urutan": "2"
+      },
+      {
+        "id": "4",
+        "level": "RM",
+        "keterangan": "Regional Manajer",
+        "urutan": "1"
+      }
+    ]
+  },
+  {
+    "type": "table",
+    "name": "dbo.agen_struktur",
+    "database": "dbbril_agen",
+    "data": [
+      {
+        "id": "1",
+        "parent_id": null,
+        "id_agen": "1",
+        "berlaku_mulai": "2020-08-01",
+        "berlaku_akhir": "2020-08-01",
+        "status": "A",
+        "keterangan": null
+      }
+    ]
+  }
+]
